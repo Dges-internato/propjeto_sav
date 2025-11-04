@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualização de Vagas UPAEs</title>
+    <link rel="stylesheet" href="../css/vagas.css">
+</head>
+
+
+<body>
+    <main>
+    <form method="post" name="forms">
+      <h2>Sistema de Atualização de Vagas</h2>
+      <p class="subtitulo" style="font-size: 22px;">UPAE</p>
+      <!--ADICIONAR OUTRAS ESPECIALIDADES-->
+      <div id="container-especialidades">
+      <div class="especialidade-item">
+      <!--ESPECIALIDADES-->
+      <label>Especialidade</label>
+      <select name="ESPECIALIDADE" required>
+        <option value="">Selecione a Especialidade</option>
+        <option>ALERGOLOGIA</option>
+        <option>AMB E SERVIÇO DE PRONTO ATENDIMENTO</option>
+        <option>AMBULATÓRIO</option>
+        <option>AMBULATÓRIO DE HEMATOLOGIA</option>
+        <option>ANESTESIOLOGIA</option>
+        <option>ANGIOLOGIA/VASCULAR</option>
+        <option>BLOCO CIRURGICO</option>
+        <option>BLOCO CIRURG/CME</option>
+        <option>BLOCO OBSTÉTRICO</option>
+        <option>CARDIOLOGIA</option>
+        <option>CCIH</option>
+        <option>CENTRAL DE MATERIAL E ESTERILIZAÇÃO</option>
+        <option>CENTRAL DE REGULAÇÃO</option>
+        <option>CIRURGIA DE MÃO</option>
+        <option>CIRURGIA GERAL</option>
+        <option>CIRURGIA GERAL/ORTOPEDIA</option>
+        <option>CIRURGIA PEDIÁTRICA</option>
+        <option>CIRURGIA PLÁSTICA</option>
+        <option>CIRURGIA TRAUMA</option>
+        <option>CIRURGIA VASCULAR</option>
+        <option>CLÍNICA MÉDICA</option>
+        <option>CLÍNICA MÉDICA (GESTÃO)</option>
+        <option>CLÍNICA PEDIÁTRICA</option>
+        <option>CLÍNICA VASCULAR</option>
+        <option>COLOPROCTOLOGIA</option>
+        <option>CUIDADOS PALIATIVOS</option>
+        <option>DERMATOLOGIA - PEQUENAS CIRURGIAS</option>
+        <option>EMERGÊNCIA CARDIOLÓGICA</option>
+        <option>EMERGÊNCIA CARDIO PLANTÃO</option>
+        <option>EMERGÊNCIA CIRURGICA</option>
+        <option>EMERGÊNCIA CLÍNICA</option>
+        <option>EMERGÊNCIA CLÍNICA (ÁREA AMARELA)</option>
+        <option>EMERGÊNCIA CLÍNICA (ÁREA VERDE)</option>
+        <option>EMERGÊNCIA CLÍNICA (ÁREA VERMELHA)</option>
+        <option>EMERGÊNCIA OBSTÉTRICA</option>
+        <option>EMERGÊNCIA PEDIÁTRICA</option>
+        <option>EMERGÊNCIA TRAUMA-ORTOPEDIA</option>
+        <option>EMERGÊNCIA</option>
+        <option>ENFERMARIA ADULTO DIP</option>
+        <option>ENDOCRINOLOGIA</option>
+        <option>EXAMES DIAGNÓSTICOS</option>
+        <option>GASTROENTEROLOGIA</option>
+        <option>GERIATRIA</option>
+        <option>GESTÃO EM SAÚDE</option>
+        <option>GINECOLOGIA</option>
+        <option>GINECOLOGIA (AMBULATÓRIO)</option>
+        <option>GINECOLOGIA E OBSTETRÍCIA</option>
+        <option>HEMODINÂMICA</option>
+        <option>LEITOS INTEGRAIS</option>
+        <option>MASTOLOGIA</option>
+        <option>MATERNIDADE</option>
+        <option>MATERNO INFANTIL</option>
+        <option>NEFROLOGIA</option>
+        <option>NEONATOLOGIA</option>
+        <option>NEUROCIRURGIA</option>
+        <option>NEUROLOGIA</option>
+        <option>NIR</option>
+        <option>OBSTETRÍCIA</option>
+        <option>OFTALMOLOGIA</option>
+        <option>OTORRINOLARINGOLOGIA</option>
+        <option>PEDIATRIA</option>
+        <option>PNEUMOLOGIA</option>
+        <option>RADIOLOGIA</option>
+        <option>REUMATOLOGIA</option>
+        <option>SAÚDE MENTAL - LEITOS INTEGRAIS</option>
+        <option>SAÚDE MENTAL/PSIQUIATRIA</option>
+        <option>SALA VERMELHA</option>
+        <option>TRAUMATO-ORTOPEDIA</option>
+        <option>TRAUMATOLOGIA</option>
+        <option>TRIAGEM ADULTO - DIP</option>
+        <option>UCI NEO/PED</option>
+        <option>UROLOGIA</option>
+        <option>UTI</option>
+        <option>UTI 1</option>
+        <option>UTI 2</option>
+        <option>UTI 3</option>
+        <option>UTI ADULTO</option>
+        <option>UTI ADULTO DIP</option>
+        <option>UTI CIRURGICA</option>
+        <option>UTI CLÍNICA</option>
+        <option>UTI CORONÁRIA</option>
+        <option>UTI GERAL</option>
+        <option>UTI NEO E PED</option>
+        <option>UTI PEDIÁTRICA</option>
+        <option>UTI PEDIÁTRICA DIP</option>
+        <option>UTI PÓS OPERATÓRIO</option>
+        <option>UTI SRAG</option>
+        <option>USAN</option>
+        <option>VASCULAR</option>
+        <option>VIGILÂNCIA EPIDEMIOLÓGICA</option>
+      </select>
+      <!--TURNO-->
+      <label>Turno da Manhã (07h ás 13h)</label>
+      <input type="number" name="turno" placeholder="Vagas de Manhã" required>
+      <label>Turno da Tarde (13h ás 19h)</label>
+      <input type="number" name="turno" placeholder="Vagas de Tarde" required>
+      <!--SELETOR DE VAGAS-->
+      <label>Total</label>
+      <input type="number" name="TOTAL_DE_VAGAS" placeholder="Total de Vagas" min="1" max="1000" required>
+      <!--OBS-->
+      <textarea name="obs" placeholder="Observação"></textarea>
+      </div>
+      </div>
+              <!-- Botão de adicionar nova especialidade -->
+        <button type="button" id="adicionar-especialidade">Adicionar mais uma Especialidade</button>
+      <!--BOTÃO-->
+      <button type="submit">Enviar Dados</button>
+      <!--SUPORTE-->
+      <p class="suporte">Precisa de Ajuda? Fale com o Suporte</p>
+        <p>
+            <a class="suporte">(81) 98888-5735</a> <strong>|</strong>
+            <a class="suporte">thiago.dges@gmail.com</a>
+        </p>
+    </form>
+  </main>
+  <script src="../script/script.js"></script>
+</body>
+</html>

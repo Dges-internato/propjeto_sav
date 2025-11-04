@@ -1,0 +1,140 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FUNDO ESTILIZADO */
+/* FUNDO DA PÁGINA COM DEGRADÊ USANDO A COR BASE */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #004aad 0%,      /* AZUL PRINCIPAL */
+        #93c9ff 100%     /* AZUL MAIS CLARO */
+    );
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CONTAINER ÚNICO COM FROSTED GLASS */
+.container-login {
+    background: rgba(255, 255, 255, 0.1); /* FUNDO LEVE TRANSPARENTE */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* BORDA SEMI-TRANSPARENTE */
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 360px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(500px); /* EFEITO BLUR DO VIDRO */
+    -webkit-backdrop-filter: blur(500px);
+}
+
+/* TÍTULO */
+.container-login main h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* LABELS */
+.container-login p {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* INPUTS */
+.container-login input[type="text"],
+.container-login input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* FOCUS NOS INPUTS */
+.container-login input[type="text"]:focus,
+.container-login input[type="password"]:focus {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* BOTÃO */
+.container-login .button button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(4, 103, 196, 0.2);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* HOVER DO BOTÃO */
+.container-login .button button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+/* FOOTER */
+.container-login footer {
+    margin-top: 20px;
+    color: #e0e0e0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.container-login footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-login footer a:hover {
+    text-decoration: underline;
+}
+
+/* CONTATO */
+.contato {
+    text-align: center;
+}
+
+/* TÍTULO SECUNDÁRIO */
+h3 {
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+/* ===== ANIMAÇÃO DE ENTRADA ===== */
+@keyframes abrirLogin {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: abrirLogin 1.5s ease forwards;
+}
